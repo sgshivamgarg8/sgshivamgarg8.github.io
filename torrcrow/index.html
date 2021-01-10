@@ -1,17 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
     <title>TorrCrow</title>
 </head>
+
 <body>
-    <h1>Welcome to TorrCrow</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TorrCrow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://play.google.com/store/apps/details?id=com.shivam.torrent_search"
+                            target="_blank">Download</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#tutorial">How to Use</a>
+                    </li> -->
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sgshivamgarg8.github.io/torrcrow/changelog" target="_blank">Changelog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sgshivamgarg8.github.io/torrcrow/privacy-policy" target="_blank">Privacy
+                            Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <div class="container">
+        <!-- jumbotron -->
+        <div class="bg-danger my-3 p-3 rounded">
+            <div class="display-4">TorrCrow</div>
+            <p class="lead">Powerful and Highly Customizable Torrent Search Engine</p>
+        </div>
+
+        <!-- carousel/ss -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/ss/1.jpg" class="d-block w-100" alt="home">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/ss/2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <!-- /carousel -->
+
+        <hr>
+
+        <!-- about the app -->
+        <div>
+            <div class="h2">About</div>
+            <p class="lead">
+            <div class="my-2">
+                <div>
+                    <strong>TorrCrow</strong> is a <em>Highly Customizable</em> & <em>Easy to Use</em> <strong><em>Torrent Search
+                            App</em></strong> that lets you search for the torrents and gives you the magnet link of the torrent that you
+                    can use to download the torrent.
+                </div>
+                <div>There are lots of customization features users can set them as per their choice.</div>
+            </div>
+
+            <div class="h5">Key Features</div>
+            <ul class="list-group">
+                <li class="list-group-item">Search torrents</li>
+                <li class="list-group-item">Voice Search</li>
+                <li class="list-group-item">Get magnet link of the torrents</li>
+                <li class="list-group-item">Open torrent download client directly from the app</li>
+                <li class="list-group-item">Sort torrents</li>
+                <li class="list-group-item">Filter torrents by size, search terms in result page</li>
+                <li class="list-group-item">Share magnet link to friends</li>
+                <li class="list-group-item">Hide torrents with no seeders</li>
+                <li class="list-group-item">Filter your results using keywords in Filter box in results screen</li>
+                <li class="list-group-item">Browse top torrents</li>
+                <li class="list-group-item">Add torrents to favorite to check them later</li>
+                <li class="list-group-item">Get suggestions for the query while you type based on your recent searches</li>
+                <li class="list-group-item">Turn on/off torrent search engine according to your choice</li>
+                <li class="list-group-item">Change torrent search engine URL manually in case default one doesn't work in your country or
+                    your ISP
+                </li>
+                <li class="list-group-item">Sync Settings to fetch live settings from server</li>
+                <li class="list-group-item">Change Theme color</li>
+                <li class="list-group-item">Toggle Dark mode</li>
+                <li class="list-group-item">Test URL whether it is working or not</li>
+                <li class="list-group-item">Set search time limit</li>
+            </ul>
+            </p>
+        </div>
+        <!-- /about -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-//The header file
-<header>
-<h1>Main Page Title</h1>
-
-</header>
